@@ -3,7 +3,7 @@
 > **The definitive command guide and functional documentation for the antiGGGravity MEPF Add-in.**
 > Compatible with Revit 2022, 2023, 2024, 2025, 2026, and 2027.
 >
-> **Current Version:** 1.0.5
+> **Current Version:** 1.0.8
 
 ---
 
@@ -12,18 +12,19 @@
 2. [Fittings Panel](#-fittings-panel)
 3. [Elbow 45 Panel](#-elbow-45-panel)
 4. [Drainage Design Panel](#-drainage-design-panel)
-5. [Adjust 3D Panel](#-adjust-3d-panel)
-6. [Checking Panel](#-checking-panel)
-7. [License Panel](#-license-panel)
-8. [Installation & Licensing](#-installation--licensing)
-9. [Support](#-support)
+5. [Utilities Panel](#-utilities-panel)
+6. [Water Supply Panel](#-water-supply-panel)
+7. [Clash Checking Panel](#-clash-checking-panel)
+8. [License Panel](#-license-panel)
+9. [Installation & Licensing](#-installation--licensing)
+10. [Support](#-support)
 
 ---
 
 ## 🚀 Introduction
 **antiGGGravity MEPF** is a high-performance productivity suite built by engineers for the MEPF (Mechanical, Electrical, Plumbing & Fire) discipline. It automates the repetitive pipe-routing, fitting, and coordination tasks that consume a large share of a modelling day — letting you focus on design intent rather than dragging connectors.
 
-With **26 specialized commands** across **6 ribbon panels**, the toolkit turns multi-step manual pipe connections into single-click operations, all delivered through the **antiGGGravity MEPF** ribbon tab.
+With **33 specialized commands** across **7 ribbon panels**, the toolkit turns multi-step manual pipe connections into single-click operations, all delivered through the **antiG-MEPF** ribbon tab.
 
 ---
 
@@ -44,13 +45,14 @@ With **26 specialized commands** across **6 ribbon panels**, the toolkit turns m
 ---
 
 ## 📐 Elbow 45 Panel
-*Specialized 45-degree elbow combinations and traps.*
+*Specialized 45-degree elbow combinations, caps, and traps.*
 
 | Command | Description |
 |:---|:---|
 | **Transfer 2x45** | Convert any pipe elbow into a 2×45 combo — two 45° elbows joined by a diagonal pipe. |
 | **Create 2x45** | Build a 2×45 combo by selecting two pipes — two 45° elbows joined by a diagonal pipe. |
 | **Create Trap** | Select a vertical pipe and a horizontal pipe to trim and connect them with a P-trap. |
+| **Pipe End Cap** | Select a pipe end to automatically place a 45° elbow and an end cap on the open connector. |
 
 ---
 
@@ -68,8 +70,8 @@ With **26 specialized commands** across **6 ribbon panels**, the toolkit turns m
 
 ---
 
-## 🧭 Adjust 3D Panel
-*Position, align, and re-host pipework and elements directly in 3D.*
+## 🧭 Utilities Panel
+*Position, align, re-host, extend, and construct pipework and elements directly in 3D.*
 
 | Command | Description |
 |:---|:---|
@@ -77,10 +79,22 @@ With **26 specialized commands** across **6 ribbon panels**, the toolkit turns m
 | **Align Pipe** | Align multiple pipes to a target pipe by location, top, bottom, or middle in a 3D view. |
 | **Rotate** | Select elements, then pick a pipe or duct as the rotation axis to rotate the selection left or right by a chosen angle. |
 | **Assign Level** | Reassign picked elements to a target level; level-hosted families keep their absolute elevation by compensating the offset. |
+| **Reconnect** | Select a pipe fitting with an open connector, then select a pipe — the pipe endpoint is extended or trimmed to meet the fitting connector and connected. |
+| **Strut Pipe** | Pick a pipe to tee in Stub 1 (rotatable around the pipe axis), then add a connected Stub 2 via a 90° elbow (rotatable around Stub 1's axis). |
+| **Fixture Stub** | Pick a plumbing fixture to create three connected stub pipes (vertical + horizontal + vertical). Rotate Stub 2 and Stub 3 independently in 45° steps. |
 
 ---
 
-## 🔍 Checking Panel
+## ⚡ Water Supply Panel
+*Design water supply piping and connect fixtures to main lines.*
+
+| Command | Description |
+|:---|:---|
+| **Design Supply** | Design fixture stubs and connect them to a main supply pipe in one step. Creates up to 3 stub pipes from the fixture connector, then routes a vertical riser from the terminal stub to the main pipe elevation and branches to a T-fitting. Supports rotation and tee offset. |
+
+---
+
+## 🔍 Clash Checking Panel
 *Find and resolve interferences without leaving Revit.*
 
 | Command | Description |
