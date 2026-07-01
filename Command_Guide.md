@@ -3,7 +3,7 @@
 > **The definitive command guide and functional documentation for the antiGGGravity MEPF Add-in.**
 > Compatible with Revit 2022, 2023, 2024, 2025, 2026, and 2027.
 >
-> **Current Version:** 1.0.8
+> **Current Version:** 1.0.11
 
 ---
 
