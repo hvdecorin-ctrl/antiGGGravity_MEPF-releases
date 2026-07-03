@@ -24,7 +24,7 @@
 ## 🚀 Introduction
 **antiGGGravity MEPF** is a high-performance productivity suite built by engineers for the MEPF (Mechanical, Electrical, Plumbing & Fire) discipline. It automates the repetitive pipe-routing, fitting, and coordination tasks that consume a large share of a modelling day — letting you focus on design intent rather than dragging connectors.
 
-With **33 specialized commands** across **7 ribbon panels**, the toolkit turns multi-step manual pipe connections into single-click operations, all delivered through the **antiG-MEPF** ribbon tab.
+With **32 specialized commands** across **7 ribbon panels**, the toolkit turns multi-step manual pipe connections into single-click operations, all delivered through the **antiG-MEPF** ribbon tab.
 
 ---
 
@@ -75,7 +75,8 @@ With **33 specialized commands** across **7 ribbon panels**, the toolkit turns m
 
 | Command | Description |
 |:---|:---|
-| **Place Pipe** | Click a point to drop a vertical riser between a start and end level, using the chosen system, pipe type, and diameter. |
+| **Place Riser** | Click a point to drop a vertical riser between a start and end level, using the chosen piping system, pipe type, and diameter. |
+| **Multi Pipe** | Configure multiple parallel pipes (each with its own level, system type, pipe type, and diameter), then draw the shared path by clicking points. Press ESC to finish and apply. |
 | **Align Pipe** | Align multiple pipes to a target pipe by location, top, bottom, or middle in a 3D view. |
 | **Rotate** | Select elements, then pick a pipe or duct as the rotation axis to rotate the selection left or right by a chosen angle. |
 | **Assign Level** | Reassign picked elements to a target level; level-hosted families keep their absolute elevation by compensating the offset. |
