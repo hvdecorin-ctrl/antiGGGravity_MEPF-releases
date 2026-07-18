@@ -24,7 +24,7 @@
 ## 🚀 Introduction
 **antiGGGravity MEPF** is a high-performance productivity suite built by engineers for the MEPF (Mechanical, Electrical, Plumbing & Fire) discipline. It automates the repetitive pipe-routing, fitting, and coordination tasks that consume a large share of a modelling day — letting you focus on design intent rather than dragging connectors.
 
-With **32 specialized commands** across **7 ribbon panels**, the toolkit turns multi-step manual pipe connections into single-click operations, all delivered through the **antiG-MEPF** ribbon tab.
+With **33 specialized commands** across **7 ribbon panels**, the toolkit turns multi-step manual pipe connections into single-click operations, all delivered through the **antiG-MEPF** ribbon tab.
 
 ---
 
@@ -101,6 +101,7 @@ With **32 specialized commands** across **7 ribbon panels**, the toolkit turns m
 | Command | Description |
 |:---|:---|
 | **Check Clash** | Detect interferences between two element categories — choose Category A and B, run the check, then click a result to zoom to and select the clashing pair. |
+| **Import Clashed** | Load a clash report (.xlsx) exported from Check Clash — browse to the file, then click any row to zoom to and select the clashing elements in the model. |
 | **Resolve Clash** | Reroute a pipe around an obstruction (beam, column, pipe, wall, etc.) — pick the obstruction then the pipe, choose a direction and 45°/90° elbows, and the pipe jogs past and rejoins its original line. |
 
 ---
