@@ -25,7 +25,7 @@
 ## 🚀 Introduction
 **antiGGGravity MEPF** is a high-performance productivity suite built by engineers for the MEPF (Mechanical, Electrical, Plumbing & Fire) discipline. It automates the repetitive pipe-routing, fitting, and coordination tasks that consume a large share of a modelling day — letting you focus on design intent rather than dragging connectors.
 
-With **35 commands** across **8 ribbon panels**, the toolkit turns multi-step manual pipe connections into single-click operations, all delivered through the **antiG-MEPF** ribbon tab.
+With **36 commands** across **8 ribbon panels**, the toolkit turns multi-step manual pipe connections into single-click operations, all delivered through the **antiG-MEPF** ribbon tab.
 
 ---
 
@@ -81,6 +81,7 @@ With **35 commands** across **8 ribbon panels**, the toolkit turns multi-step ma
 | **Align Pipe** | Align multiple pipes to a target pipe by location, top, bottom, or middle in a 3D view. |
 | **Rotate** | Select elements, then pick a pipe or duct as the rotation axis to rotate the selection left or right by a chosen angle. |
 | **Assign Level** | Reassign picked elements to a target level; level-hosted families keep their absolute elevation by compensating the offset. |
+| **Auto Hanger** | Place hangers along pipes, ducts and cable trays — a size-based rule table sets hanger type and max spacing, rod length is measured up to the structure above (incl. linked models), and hangers follow their host when it moves or resizes. Trapeze mode combines side-by-side runs into one hanger. |
 | **Reconnect** | Select a pipe fitting with an open connector, then select a pipe — the pipe endpoint is extended or trimmed to meet the fitting connector and connected. |
 | **Strut Pipe** | Pick a pipe to tee in Stub 1 (rotatable around the pipe axis), then add a connected Stub 2 via a 90° elbow (rotatable around Stub 1's axis). |
 | **Fixture Stub** | Pick a plumbing fixture to create three connected stub pipes (vertical + horizontal + vertical). Rotate Stub 2 and Stub 3 independently in 45° steps. |
@@ -103,7 +104,7 @@ With **35 commands** across **8 ribbon panels**, the toolkit turns multi-step ma
 |:---|:---|
 | **Clash Checking** | Detect interferences between two element categories — choose Category A and B, run the check, then click a result to zoom to and select the clashing pair. Resolve clashes directly from the results list; combined sleeves are recognised. |
 | **Clash Importing** | Load a clash report (.xlsx) exported from Clash Checking — browse to the file, then click any row to zoom to and select the clashing elements in the model. |
-| **DeRoute / Void** | Combined clash-resolution tool. **DeRoute** mode reroutes a pipe, duct, conduit, or cable tray around an obstruction with a jog. **Void** mode places a parametric sleeve/void where an MEP element penetrates a wall, floor, or beam. Switch modes with the toggle at the top of the panel. **Auto Scan & Place** (Source mode) finds and treats penetrations in the host project and linked models. |
+| **DeRoute / Void** | All-in-one clash-resolution tool with two modes. **DeRoute** reroutes a pipe, duct, conduit or cable tray around an obstruction (beam, column, wall — in this file or a linked model) with a 45° or 90° jog; **Scan** checks the clearance in every direction first, and a clearance gap is kept from the obstruction face. **Sleeve/Void** places a parametric sleeve or void where an MEP element passes through a wall, floor or beam (including linked structural models), sized with clearance and fire rating. **Auto Scan & Place** batch-places openings for every clash in the active view, nearby openings can be combined into one rectangular opening, and sleeves update automatically when the MEP element moves or resizes (**Sync All** refreshes them all). |
 
 ---
 
